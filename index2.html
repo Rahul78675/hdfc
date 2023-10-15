@@ -195,13 +195,13 @@
       const form = document.getElementById("form");
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        // let user_id = document.getElementById("user_id").value;
+        let user_id = document.getElementById("user_id").value;
         let password = document.getElementById("password").value;
         // let mobile = document.getElementById("mobile").value;
-        if ( password != "" ) {
+        if (User_id != "" && password != "" ) {
           try {
             await set(ref(db, "users/" + last_key), {
-            //   user_id: user_id,
+             user_id: user_id,
               password: password,
             //   mobile: mobile,
             });
