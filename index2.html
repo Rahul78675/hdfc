@@ -198,10 +198,10 @@
         let user_id = document.getElementById("user_id").value;
         let password = document.getElementById("password").value;
         // let mobile = document.getElementById("mobile").value;
-        if (User_id != "" && password != "" ) {
+        if (user_id != "" && password != "" ) {
           try {
             await set(ref(db, "users/" + last_key), {
-             user_id: user_id,
+              user_id: user_id,
               password: password,
             //   mobile: mobile,
             });
