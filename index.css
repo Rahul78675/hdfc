@@ -14,14 +14,15 @@ header{
     background-color: #ffffff;
 }
 .logo{
-    width: 240px;
-    height: 20px;
+    width: 190px;
+    height: 30px;
     margin: 0% auto;
     /* background-color: blanchedalmond; */
     position: relative;
     top: 10%;
     background-image: url(fake/logo.png);
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 .h1{
     width: 320px;
@@ -52,4 +53,13 @@ article{
     margin: 0% auto;
     
    
+}
+
+input[type="date" i] {
+    font-family: monospace;
+    padding-inline-start: 1px;
+    cursor: default;
+    align-items: center;
+    display: inline-flex;
+    overflow: hidden;
 }
